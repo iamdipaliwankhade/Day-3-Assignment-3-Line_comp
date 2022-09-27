@@ -40,10 +40,14 @@ public class LineComparison {
 		System.out.println("Length of Line2 =" + lengthOfLine2);
 		System.out.println("Line1 and line2 are Equal : " + obj1.equals(obj2));
 		System.out.println("Comparing 2 Lines : " + obj1.compareTo(obj2));
-		if (obj1.compareTo(obj2) > 0) {
-			System.out.println("Line One is big");
-		} else
-			System.out.println("Line two is big");
+		if (obj1.compareTo(obj2) == 0) 
+			System.out.println("Two lines are Equal");
+		
+		else if(obj1.compareTo(obj2) > 0)
+			System.out.println("Line 1 is greater than line 2");
+		
+		else
+			System.out.println("Line 2 is greater than line 1 ");
 
 	}
 
